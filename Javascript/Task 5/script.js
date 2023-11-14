@@ -50,5 +50,7 @@ const persons = [
 ]
 const List = document.getElementById("list");
 persons.forEach(e => {
-    List.innerHTML += `<h2><ol>Name :${e.name} Age: ${e.age}</ol></h2>`
+    const h2 = document.createElement("h2");
+    h2.innerText = `name = ${e.name} , age = ${e.age}`;
+    List.appendChild(h2);
 });
