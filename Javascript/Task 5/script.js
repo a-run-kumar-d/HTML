@@ -50,5 +50,5 @@ const persons = [
 ]
 const List = document.getElementById("list");
 persons.forEach(e => {
-    List.innerHTML += `<li><h2>Name :${e.name} Age: ${e.age}<h2></li>`
+    List.innerHTML += `<h2><ol>Name :${e.name} Age: ${e.age}</ol></h2>`
 });
